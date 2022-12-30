@@ -11,7 +11,7 @@ import Movies from '../public/movies.png';
 import Vaca from '../public/vaca-chocha.png';
 import Inmobiliaria from '../public/inmo.png';
 import Farmacia from '../public/farmacia.png';
-
+import Logo from '../public/LogoPorta.png';
 
 export default function Home() {
   
@@ -30,19 +30,19 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl text-sky-700 font-burtons'>Mi Portfolio</h1>
+            <Image src={Logo} className='cursor-pointer w-60 h-50'/>
             <ul className='flex items-center'>
               <li>
                 <IoIosCloudyNight onClick={()=>setDarkMode(!darkMode)} className='cursor-pointer text-3xl'/>
               </li>
               <li>
-                <a href='#' className='bg-cyan-300 text-black px-4 py-2 rounded-md ml-5'>CV</a>       
+                <a href='#' className='bg-cyan-300 text-black px-8 py-5 rounded-md ml-5'>CV</a>       
               </li> 
             </ul>  
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-4xl py-2 text-teal-500 font-medium md:text-6xl'>Alejandro Ramos</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Full Stack Developer</h3>
+            <h3 className='text-2xl py-2 md:text-3xl'>Desarrollador Full Stack</h3>
             <p className='text-md py-5 leading-8 text-gray-600 md:text-xl'>Soy un programador nacido y criado en Ushuaia. De joven me interesé por la Informática y
             la Programación, pasando por educación secundaria y universidad. La vida me llevo a trabajar varios años en fábrica de electrodómesticos, decidí volver a mis raíces
             e ingresé a un bootcamp en JavaScript brindado por Plataforma 5.<br />Sigo formándome día a día para alcanzar mis metas como desarrollador de software.</p>

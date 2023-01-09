@@ -13,6 +13,7 @@ import Inmobiliaria from '../public/inmo.png';
 import Farmacia from '../public/farmacia.png';
 import Logo from '../public/LogoPorta.png';
 
+
 export default function Home() {
   
   const [darkMode,setDarkMode] = useState(false);
@@ -36,7 +37,9 @@ export default function Home() {
                 <IoIosCloudyNight onClick={()=>setDarkMode(!darkMode)} className='cursor-pointer text-3xl'/>
               </li>
               <li>
-                <a href='#' className='bg-cyan-300 text-black px-8 py-5 rounded-md ml-5'>CV</a>       
+                <a href='https://drive.google.com/file/d/1S2QF2Bz7mYWqRT28bAI1NFRL_pdcjIOJ/view?usp=share_link' download >
+                  <button className='bg-cyan-300 text-black px-8 py-5 rounded-md ml-5'>CV</button>
+                </a>       
               </li> 
             </ul>  
           </nav>

@@ -11,7 +11,18 @@ import Movies from '../public/movies.png';
 import Vaca from '../public/vaca-chocha.png';
 import Inmobiliaria from '../public/inmo.png';
 import Farmacia from '../public/farmacia.png';
-import Logo from '../public/LogoPorta.png';
+
+import Logo from '../public/logo1.png';
+
+import  Node  from '../public/images/node-js-logo.jpg';
+import  Express  from '../public/images/express-logo.png';
+import Git from '../public/images/git-logo.png';
+import Github from '../public/images/github-logo.png';
+import Js from '../public/images/js-logo.png';
+import Linux from '../public/images/linux-logo.png';
+import Mongo from '../public/images/mongo-logo.png';
+import Postgres from '../public/images/postgres-logo.png';
+import ReactLogo from '../public/images/react-logo.png';
 
 
 export default function Home() {
@@ -31,14 +42,19 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <Image src={Logo} className='cursor-pointer w-60 h-50'/>
+            <Image src={Logo} className='cursor-pointer w-36 h-24'/>
             <ul className='flex items-center'>
               <li>
                 <IoIosCloudyNight onClick={()=>setDarkMode(!darkMode)} className='cursor-pointer text-3xl'/>
               </li>
               <li>
                 <a href='https://drive.google.com/file/d/1S2QF2Bz7mYWqRT28bAI1NFRL_pdcjIOJ/view?usp=share_link' download >
-                  <button className='bg-cyan-300 text-black px-8 py-5 rounded-md ml-5'>CV</button>
+                  <button className='bg-cyan-300 text-black px-8 py-5 rounded-md ml-5'>Contáctame</button>
+                </a>       
+              </li> 
+              <li>
+                <a href='https://drive.google.com/file/d/1S2QF2Bz7mYWqRT28bAI1NFRL_pdcjIOJ/view?usp=share_link' download >
+                  <button className='bg-cyan-300 text-black px-8 py-5 rounded-md ml-5'>Ver mi CV</button>
                 </a>       
               </li> 
             </ul>  
@@ -50,7 +66,7 @@ export default function Home() {
             la Programación, pasando por educación secundaria y universidad. La vida me llevo a trabajar varios años en fábrica de electrodómesticos, decidí volver a mis raíces
             e ingresé a un bootcamp en JavaScript brindado por Plataforma 5.<br />Sigo formándome día a día para alcanzar mis metas como desarrollador de software.</p>
           </div>
-          <div className='text-4xl flex justify-center gap-16 py-3 text-gray-700'>
+          <div className='text-6xl flex justify-center gap-16 py-3 text-gray-700'>
             <BsLinkedin className='cursor-pointer' onClick={event =>  window.location.href='https://www.linkedin.com/in/alejandro-ramos-/'}/>
             <BsGithub className='cursor-pointer' onClick={event =>  window.location.href='https://github.com/ale336'}/>
           </div>
@@ -58,14 +74,45 @@ export default function Home() {
             <Image src={Avatar} alt="avatar"  />
           </div>
         </section>
-        <div className='text-6xl flex space-x-4 ... md:px-20'>
-          <DiGit />
-          <DiHtml5 />
-          <DiJsBadge/>
-          <DiLinux />
-          <DiNodejs />
-          <DiPostgresql />
-          <DiReact />
+        <div className=' lg:flex text-2xl text-center flex gap-12 md:px-20'>
+          <div>
+            <Image src={Node} alt="node" className=' w-36 h-28'/>
+            <h2 className='p-4'>Node Js</h2>
+          </div>
+          <div>
+            <Image src={Express} alt="express" className='w-28 h-28'/>
+            <h2 className='p-4'>Express Js</h2>
+          </div>
+          <div>
+            <Image src={Git} alt="git" className=' w-36 h-28'/>
+            <h2 className='p-4'>Git</h2>
+          </div>
+          <div>
+            <Image src={Github} alt="github" className='w-28 h-28'/>
+            <h2 className='p-4'>GitHub</h2>
+          </div>
+          <div>
+            <Image src={Js} alt="js" className='w-28 h-28'/>
+            <h2 className='p-4'>JavaScript</h2>
+          </div>
+          <div>
+            <Image src={Linux} alt="linux" className='w-36 h-28'/>
+            <h2 className='p-4'>Linux</h2>
+          </div>
+          <div>
+            <Image src={Mongo} alt="mongo" className='w-28 h-28'/>
+            <h2 className='p-4'>Mongo DB</h2>
+          </div>
+          <div>
+            <Image src={Postgres} alt="postgres" className='w-28 h-28'/>
+            <h2 className='p-4'>PostgreSQL</h2>
+          </div>
+          <div>
+            <Image src={ReactLogo} alt="react" className='w-36 h-28'/>
+            <h2 className='p-4'>React Js</h2>
+          </div>
+        </div>
+          
           {/* <h3 className='text-3xl py-1'>Servivios que ofrecemos</h3>
           <p className='text-md py-2 leading-8 text-gray-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 <span className='text-teal-700'> incididunt </span>ut labore et dolore <span className='text-teal-700'>magna aliqua</span>. Ut enim ad minim 
@@ -73,27 +120,45 @@ export default function Home() {
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
           <p className='text-md py-2 leading-8 text-gray-700'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p> */}
+        <div className='h-screen flex relative flex-col text-center'>
+          <h2 className='absolute top-24 uppercase tracking(-20px) text-blue-500 text-2xl'>PROYECTOS</h2>
         </div>
         <div className='lg:flex gap-10'>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white cursor-pointer'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Image src={Movies} alt="App Pelis" width={250} height={200} />
             <h3 className='text-lg font-medium pt-8 pb-2'>Movie App</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
+            <div className=' mt-20 lg:flex gap-24'>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+            </div>
           </div>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white cursor-pointer'>
-            <Image src={Vaca} alt="App Vaca" width={270} height={230}/>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <Image src={Vaca} alt="App Vaca" width={195} height={170}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>E-commerce Dietética "Vaca Chocha"</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
+            <div className=' mt-10 lg:flex gap-24'>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+            </div>
           </div>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white cursor-pointer'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Image src={Inmobiliaria} alt="App Inmobiliaria" width={400} height={500}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>Inmobiliaria Mejor Vivir</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
+            <div className=' mt-16 lg:flex gap-24'>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+            </div>
           </div>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white cursor-pointer'>
-            <Image src={Farmacia} alt="App Pharmacy" width={250} height={150}/>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <Image src={Farmacia} alt="App Pharmacy" width={190} height={140}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>E-commerce Farmacia</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
+            <div className=' mt-12 lg:flex gap-24'>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
+              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+            </div>
           </div>
 
         </div>

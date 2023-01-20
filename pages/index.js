@@ -67,14 +67,14 @@ export default function Home() {
             e ingresé a un bootcamp en JavaScript brindado por Plataforma 5.<br />Sigo formándome día a día para alcanzar mis metas como desarrollador de software.</p>
           </div>
           <div className='text-6xl flex justify-center gap-16 py-3 text-gray-700'>
-            <BsLinkedin className='cursor-pointer' onClick={event =>  window.location.href='https://www.linkedin.com/in/alejandro-ramos-/'}/>
-            <BsGithub className='cursor-pointer' onClick={event =>  window.location.href='https://github.com/ale336'}/>
+            <BsLinkedin className='cursor-pointer' target='_blank' onClick={event =>  window.location.href='https://www.linkedin.com/in/alejandro-ramos-/'}/>
+            <BsGithub className='cursor-pointer' target='_blank' onClick={event =>  window.location.href='https://github.com/ale336'}/>
           </div>
           <div className='relative mx-auto my-8 bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <Image src={Avatar} alt="avatar"  />
           </div>
         </section>
-        <div className=' lg:flex text-2xl text-center flex gap-12 md:px-20'>
+        <div className=' lg:flex text-2xl gap-12 md:px-20'>
           <div>
             <Image src={Node} alt="node" className=' w-36 h-28'/>
             <h2 className='p-4'>Node Js</h2>
@@ -108,7 +108,7 @@ export default function Home() {
             <h2 className='p-4'>PostgreSQL</h2>
           </div>
           <div>
-            <Image src={ReactLogo} alt="react" className='w-36 h-28'/>
+            <Image src={ReactLogo} alt="react" className=' w-40 h-28'/>
             <h2 className='p-4'>React Js</h2>
           </div>
         </div>
@@ -120,17 +120,17 @@ export default function Home() {
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
           <p className='text-md py-2 leading-8 text-gray-700'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p> */}
-        <div className='h-screen flex relative flex-col text-center'>
-          <h2 className='absolute top-24 uppercase tracking(-20px) text-blue-500 text-2xl'>PROYECTOS</h2>
+        <div className='text-center'>
+          <h2 className='text-blue-500 text-5xl font-bold'>PROYECTOS</h2>
         </div>
         <div className='lg:flex gap-10'>
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Image src={Movies} alt="App Pelis" width={250} height={200} />
-            <h3 className='text-lg font-medium pt-8 pb-2'>Movie App</h3>
+            <Image src={Farmacia} alt="App Pharmacy" width={190} height={140}/>
+            <h3 className='text-lg font-medium pt-8 pb-2'>E-commerce Farmacia</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
-            <div className=' mt-20 lg:flex gap-24'>
-              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
-              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+            <div className=' mt-12 lg:flex gap-24'>
+              <a href='https://pharmacy-mern.onrender.com/' target='_blank' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
+              <a href='https://github.com/No-Country/C8-65-FT-MERN' target='_blank' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
             </div>
           </div>
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
@@ -139,23 +139,24 @@ export default function Home() {
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
             <div className=' mt-10 lg:flex gap-24'>
               <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
-              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+              <a href='https://github.com/ale336/La-Vaca-Chocha' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
             </div>
           </div>
+          
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Image src={Inmobiliaria} alt="App Inmobiliaria" width={400} height={500}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>Inmobiliaria Mejor Vivir</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
             <div className=' mt-16 lg:flex gap-24'>
               <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
-              <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
+              <a href='https://github.com/ale336/InmoMejorVivir' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
             </div>
           </div>
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Image src={Farmacia} alt="App Pharmacy" width={190} height={140}/>
-            <h3 className='text-lg font-medium pt-8 pb-2'>E-commerce Farmacia</h3>
+            <Image src={Movies} alt="App Pelis" width={250} height={200} />
+            <h3 className='text-lg font-medium pt-8 pb-2'>Movie App</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
-            <div className=' mt-12 lg:flex gap-24'>
+            <div className=' mt-20 lg:flex gap-24'>
               <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
               <a href='#' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
             </div>

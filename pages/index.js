@@ -74,7 +74,7 @@ export default function Home() {
             <Image src={Avatar} alt="avatar"  />
           </div>
         </section>
-        <div className=' lg:flex text-2xl gap-12 md:px-20'>
+        <div className=' lg:flex text-2xl text-center gap-12 md:px-20'>
           <div>
             <Image src={Node} alt="node" className=' w-36 h-28'/>
             <h2 className='p-4'>Node Js</h2>
@@ -128,7 +128,7 @@ export default function Home() {
             <Image src={Farmacia} alt="App Pharmacy" width={190} height={140}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>E-commerce Farmacia</h3>
             <p className='py-2'>Breve descripcion de la aplicacion sin mencionar las tecnologias</p>
-            <div className=' mt-12 lg:flex gap-24'>
+            <div className=' mt-12 lg:flex gap-24 md:mt-10'>
               <a href='https://pharmacy-mern.onrender.com/' target='_blank' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>Deploy</a>
               <a href='https://github.com/No-Country/C8-65-FT-MERN' target='_blank' className='btn text-black px-2 py-2 border-4 border-blue-600 rounded-md'>GitHub</a>
             </div>
@@ -163,6 +163,37 @@ export default function Home() {
           </div>
 
         </div>
+
+        <div class="container mx-auto my-20 w-1/3 border border-blue-500 bg-white">
+        <div class="p-5 space-y-5 shadow-xl">
+        <h4 class="text-center text-3xl">Contáctame</h4>
+        <form>
+        <div class="grid grid-cols-2 gap-5">
+          <input
+            type="text"
+            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500 col-span-2"
+            placeholder="Nombre"
+          />
+          <input
+            type="email"
+            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500 col-span-2"
+            placeholder="Email"
+          />
+          <textarea
+            cols="10"
+            rows="5"
+            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-blue-500 col-span-2"
+            placeholder="Escribí tu mensaje..."
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Enviar"
+          class="focus:outline-none mt-5 bg-blue-500 px-4 py-2 text-white font-bold w-full"
+        />
+      </form>
+  </div>
+</div>
       </main>
     </div>
     </>
